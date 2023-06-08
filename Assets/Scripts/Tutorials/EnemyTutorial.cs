@@ -8,6 +8,11 @@ public class EnemyTutorial : MonoBehaviour
     [SerializeField] private GameObject EnemyObject;
     [SerializeField] private Tilemap ItemTilemap;
 
+    void Start()
+    {
+        EnemyPopUp.gameObject.SetActive(true);
+    }
+
     private void Update()
     {
         if (!EnemyObject.activeSelf)

@@ -4,6 +4,7 @@ public class EnemyKiller : MonoBehaviour
 {
     [SerializeField] private float raycastDistance = 1f;  // Distance to cast the raycast
     [SerializeField] private LayerMask enemyLayer;  // Layer mask for the enemy object
+    [SerializeField] private MonoBehaviour DeathScript;
 
     void Update()
     {
@@ -13,6 +14,7 @@ public class EnemyKiller : MonoBehaviour
         // If the raycast hit an enemy, destroy the enemy game object and play the death effect
         if (hit.collider != null)
         {
+            DeathScript.enabled = false;
             hit.collider.gameObject.SetActive(false);
         }
     }

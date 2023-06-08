@@ -6,6 +6,11 @@ public class InteractTutorial : MonoBehaviour
     [SerializeField] private GameObject NextTutorial;
     [SerializeField] private GameObject InteractionBox;
 
+    void Start()
+    {
+        InteractPopUp.gameObject.SetActive(true);
+    }
+
     private void Update()
     {
         if (InteractionBox.activeSelf)

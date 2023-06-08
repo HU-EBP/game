@@ -11,6 +11,11 @@ public class JumpTutorial : MonoBehaviour
 
     private int JumpCounter;
 
+    void Start()
+    {
+        JumpPopUp.gameObject.SetActive(true);
+    }
+
     private void Update()
     {
         if (Input.GetButtonDown("Jump")) { JumpCounter++; }

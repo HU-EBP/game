@@ -3,10 +3,9 @@ using UnityEngine;
 public class MoveOnClick : MonoBehaviour
 {
     [SerializeField] private GameObject InteractionBox;
-    [SerializeField] private GameObject objectToMove;
+    [SerializeField] private Transform objectToMove;
     [SerializeField] private float moveDuration = 1.0f;
-    [SerializeField] private float moveDistance = 5.0f;
-    [SerializeField] private float minYCoordinate = -Mathf.Infinity;
+    [SerializeField] private Vector3 moveTo;
 
     private bool isMoving = false;
     private float startTime;
@@ -14,11 +13,11 @@ public class MoveOnClick : MonoBehaviour
 
     public void OnButtonClick()
     {
-        if (!isMoving && objectToMove.transform.position.y >= minYCoordinate)
+        if (!isMoving)
         {
             isMoving = true;
             startTime = Time.time;
-            startPosition = objectToMove.transform.position;
+            startPosition = objectToMove.localPosition;
         }
     }
 
@@ -27,7 +26,7 @@ public class MoveOnClick : MonoBehaviour
         if (isMoving)
         {
             float t = (Time.time - startTime) / moveDuration;
-            objectToMove.transform.position = Vector3.Lerp(startPosition, startPosition + new Vector3(0, moveDistance, 0), t);
+            objectToMove.localPosition = Vector3.Lerp(startPosition, moveTo, t);
             if (t >= 1.0f)
             {
                 isMoving = false;

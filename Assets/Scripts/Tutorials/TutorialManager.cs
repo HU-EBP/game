@@ -10,6 +10,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject JumpPopUp;
     [SerializeField] private GameObject EnemyPopUp;
 
+    [SerializeField] private GameObject WalkTutorialBox;
     [SerializeField] private GameObject JumpTutorialBox;
     [SerializeField] private GameObject EnemyTutorialBox;
     [SerializeField] private GameObject InteractionTutorialBox;
@@ -31,6 +32,7 @@ public class TutorialManager : MonoBehaviour
             ItemTilemap.SetTile(new Vector3Int(9, -3, 0), null);
             ItemTilemap.SetTile(new Vector3Int(9, -4, 0), null);
 
+            WalkTutorialBox.gameObject.SetActive(false);
             WalkPopUp.gameObject.SetActive(false);
             JumpTutorialBox.gameObject.SetActive(true);
         }
@@ -42,6 +44,7 @@ public class TutorialManager : MonoBehaviour
             ItemTilemap.SetTile(new Vector3Int(34, -3, 0), null);
             ItemTilemap.SetTile(new Vector3Int(34, -4, 0), null);
 
+            JumpTutorialBox.gameObject.SetActive(false);
             JumpPopUp.gameObject.SetActive(false);
             EnemyTutorialBox.gameObject.SetActive(true);
         }
@@ -53,6 +56,7 @@ public class TutorialManager : MonoBehaviour
             ItemTilemap.SetTile(new Vector3Int(45, -3, 0), null);
             ItemTilemap.SetTile(new Vector3Int(45, -4, 0), null);
 
+            EnemyTutorialBox.gameObject.SetActive(false);
             EnemyPopUp.gameObject.SetActive(false);
             InteractionTutorialBox.gameObject.SetActive(true);
         }
