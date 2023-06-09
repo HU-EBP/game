@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitch : MonoBehaviour
+public class changeScene : MonoBehaviour
 {
     public int SceneToLoad;
     private void OnTriggerEnter2D(Collider2D collision)
