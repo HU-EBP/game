@@ -5,13 +5,12 @@ using UnityEngine.UI;
 public class PuzzleCheck : MonoBehaviour
 {
     // Vars for the interaction/scene
+    public int PuzzleInt;
     [SerializeField] private GameObject PlayerCharacter;
     [SerializeField] private GameObject TargetObject;
     [SerializeField] private int PuzzleSceneInt;
-    [SerializeField] private int PuzzleInt;
     [SerializeField] private float activationDistance = 5f;
     [SerializeField] private bool isActive = false;
-
     private int PuzzleCompletedValue;
     private bool PuzzleCompleted = false;
 
@@ -19,7 +18,6 @@ public class PuzzleCheck : MonoBehaviour
     [SerializeField] private Transform objectToMove;
     [SerializeField] private float moveDuration = 1.0f;
     [SerializeField] private Vector3 moveTo;
-
     private bool isMoving = false;
     private float startTime;
     private Vector3 startPosition;
