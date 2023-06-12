@@ -7,9 +7,7 @@ public class InteractTutorial : MonoBehaviour
 
     void Start()
     {
-        //InteractPopUp.gameObject.SetActive(true);
-        NextTutorial.gameObject.SetActive(true);
-        enabled = false;
+        InteractPopUp.gameObject.SetActive(true);
     }
 
     /*private void Update()
