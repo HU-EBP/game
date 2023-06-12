@@ -3,15 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public bool IsCompleted = false;
+    public bool IsCompleted;
 
     [SerializeField] private GameObject[] puzzles;
 
-    private int CurrentPuzzle = 0;
-    private int PreviousScene = 1;
+    private int CurrentPuzzle;
+    private int PreviousScene;
 
     void Start()
     {
+        // Set vars to defaults to prevent errors
+        IsCompleted = false;
+        CurrentPuzzle = 0;
+        PreviousScene = 1;
+
         // Get puzzle number PlayerPref
         if (!PlayerPrefs.HasKey("PuzzleNum")) { Debug.LogError("No puzzle to load! - This either means the PuzzleNum PlayerPref was not assigned in the inspector, or another unexpected error has occured. Only a return to level button will show."); }
         else { CurrentPuzzle = PlayerPrefs.GetInt("PuzzleNum"); }
