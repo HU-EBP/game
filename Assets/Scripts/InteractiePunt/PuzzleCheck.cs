@@ -31,6 +31,10 @@ public class PuzzleCheck : MonoBehaviour
         // Check if the puzzle was completed
         if (PuzzleCompleted)
         {
+            // Teleport player to correct position (at interactiepunt)
+            PlayerCharacter.transform.position = transform.position;
+
+            // Start moving the object
             isMoving = true;
             startTime = Time.time;
             startPosition = objectToMove.localPosition;

@@ -25856,6 +25856,14 @@ PrefabInstance:
       propertyPath: PlayerCharacter
       value: 
       objectReference: {fileID: 29709266}
+    - target: {fileID: 7279460844260936081, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 61.500248
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460844260936081, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0000124
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936082, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Name
       value: PuzzleCheck
