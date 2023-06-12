@@ -1435,6 +1435,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 411710538}
     - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1719008515}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleSceneInt
       value: 4
       objectReference: {fileID: 0}

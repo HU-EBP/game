@@ -25,7 +25,8 @@ public class PuzzleCheck : MonoBehaviour
     void Start()
     {
         // Get value to check if puzzle completed
-        if (PlayerPrefs.HasKey("Puzzle" + PuzzleInt + "Completed")) { PuzzleCompletedValue = PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed"); }
+        if (PlayerPrefs.HasKey("Puzzle" + (PuzzleInt+1) + "Completed")) { PuzzleCompletedValue = 0; }
+        else if (PlayerPrefs.HasKey("Puzzle" + PuzzleInt + "Completed")) { PuzzleCompletedValue = PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed"); }
         PuzzleCompleted = PuzzleCompletedValue == 1;
 
         // Check if the puzzle was completed
