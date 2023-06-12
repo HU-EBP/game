@@ -1418,6 +1418,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1336134691}
     m_Modifications:
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleInt
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: TargetObject
+      value: 
+      objectReference: {fileID: 411710538}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleSceneInt
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PlayerCharacter
+      value: 
+      objectReference: {fileID: 1911896913}
     - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: moveTo.x
       value: 57.786
@@ -1628,6 +1644,11 @@ PrefabInstance:
 --- !u!4 &411710537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7279460844785330125, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 411710536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &411710538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7279460844572202965, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
   m_PrefabInstance: {fileID: 411710536}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &430731403
@@ -17817,6 +17838,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1336134691}
     m_Modifications:
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleInt
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: TargetObject
+      value: 
+      objectReference: {fileID: 1504841562}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleSceneInt
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PlayerCharacter
+      value: 
+      objectReference: {fileID: 1911896913}
     - target: {fileID: 7279460843107573182, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -18027,6 +18064,11 @@ PrefabInstance:
 --- !u!4 &1504841561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7279460844785330125, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 1504841560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1504841562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7279460844572202965, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
   m_PrefabInstance: {fileID: 1504841560}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1504841565 stripped

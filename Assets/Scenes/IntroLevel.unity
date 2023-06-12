@@ -25814,6 +25814,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1764227581}
     m_Modifications:
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleInt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: TargetObject
+      value: 
+      objectReference: {fileID: 7279460844701231033}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleSceneInt
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PlayerCharacter
+      value: 
+      objectReference: {fileID: 29709266}
     - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: moveTo.x
       value: 64.50026
@@ -25910,7 +25926,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactiepunt
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7279460844338982993, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
     m_AddedGameObjects: []
@@ -25919,6 +25936,11 @@ PrefabInstance:
 --- !u!4 &7279460844701231032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 7279460844701231031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7279460844701231033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7279460844572202965, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
   m_PrefabInstance: {fileID: 7279460844701231031}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8061037777478546311
