@@ -11,11 +11,11 @@ public class PuzzleLoader : MonoBehaviour
     void Start()
     {
         // Get previous scene PlayerPref
-        if (!PlayerPrefs.HasInt("PrevScene")) { Debug.LogError("No scene to return to! - This means an unexpected error has occured in the Proximity.CS script. Default scene to return to will be the HomeTown scene."); }
+        if (!PlayerPrefs.HasKey("PrevScene")) { Debug.LogError("No scene to return to! - This means an unexpected error has occured in the Proximity.CS script. Default scene to return to will be the HomeTown scene."); }
         else { PreviousScene = PlayerPrefs.GetInt("PrevScene"); }
 
         // Get puzzle number PlayerPref
-        if (!PlayerPrefs.HasInt("PuzzleNum")) { Debug.LogError("No puzzle to load! - This either means the PuzzleNum PlayerPref was not assigned in the inspector, or another unexpected error has occured. Only a return to level button will show."); }
+        if (!PlayerPrefs.HasKey("PuzzleNum")) { Debug.LogError("No puzzle to load! - This either means the PuzzleNum PlayerPref was not assigned in the inspector, or another unexpected error has occured. Only a return to level button will show."); }
         else { CurrentPuzzle = PlayerPrefs.GetInt("PuzzleNum"); }
 
         // Hide all puzzles
