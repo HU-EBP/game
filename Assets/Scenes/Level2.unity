@@ -1419,6 +1419,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1336134691}
     m_Modifications:
     - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 63.7531
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: -2.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleInt
       value: 3
       objectReference: {fileID: 0}
@@ -1552,7 +1560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.536
+      value: 67.50311
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17839,6 +17847,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1336134691}
     m_Modifications:
     - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 61.2475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleInt
       value: 2
       objectReference: {fileID: 0}
@@ -17846,6 +17862,10 @@ PrefabInstance:
       propertyPath: TargetObject
       value: 
       objectReference: {fileID: 1504841562}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1504841565}
     - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleSceneInt
       value: 4

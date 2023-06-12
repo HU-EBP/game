@@ -25815,6 +25815,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1764227581}
     m_Modifications:
     - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 64.50026
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleInt
       value: 1
       objectReference: {fileID: 0}
@@ -25822,6 +25830,10 @@ PrefabInstance:
       propertyPath: TargetObject
       value: 
       objectReference: {fileID: 7279460844701231033}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 7279460844701231032}
     - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleSceneInt
       value: 4
