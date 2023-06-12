@@ -4,20 +4,18 @@ public class InteractTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject InteractPopUp;
     [SerializeField] private GameObject NextTutorial;
-    [SerializeField] private GameObject InteractionBox;
 
     void Start()
     {
-        InteractPopUp.gameObject.SetActive(true);
+        //InteractPopUp.gameObject.SetActive(true);
+        NextTutorial.gameObject.SetActive(true);
+        enabled = false;
     }
 
-    private void Update()
+    /*private void Update()
     {
-        if (InteractionBox.activeSelf)
-        {
-            InteractPopUp.gameObject.SetActive(false);
-            NextTutorial.gameObject.SetActive(true);
-            enabled = false;
-        }
-    }
+        InteractPopUp.gameObject.SetActive(false);
+        NextTutorial.gameObject.SetActive(true);
+        enabled = false;
+    */}
 }
