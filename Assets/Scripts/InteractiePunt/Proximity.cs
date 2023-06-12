@@ -1,14 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using TMPro;
 
 public class Proximity : MonoBehaviour
 {
     [SerializeField] private GameObject PlayerCharacter;
     [SerializeField] private GameObject TargetObject;
+    [SerializeField] private int PuzzleSceneInt;
     [SerializeField] private float activationDistance = 5f;
     [SerializeField] private bool isActive = false;
-    [SerializeField] private GameObject InteractionBox;
 
     private void Update()
     {
@@ -19,14 +19,10 @@ public class Proximity : MonoBehaviour
         }
         else if (isActive && Vector3.Distance(TargetObject.transform.position, PlayerCharacter.transform.position) > activationDistance)
         {
-            InteractionBox.gameObject.SetActive(false);
             TargetObject.gameObject.SetActive(false);
             isActive = false;
         }
 
-        if (isActive && Input.GetKeyDown(KeyCode.E))
-        {
-            InteractionBox.gameObject.SetActive(true);
-        }
+        if (isActive && Input.GetKeyDown(KeyCode.E)) { SceneManager.LoadScene(PuzzleSceneInt); }
     }
 }

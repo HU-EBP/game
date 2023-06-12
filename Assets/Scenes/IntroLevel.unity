@@ -25844,6 +25844,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7279460844701231032}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleSceneInt
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PlayerCharacter
       value: 
       objectReference: {fileID: 29709266}
@@ -25851,6 +25855,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1603689959}
+    - target: {fileID: 7279460844572202965, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460844785330125, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_RootOrder
       value: 2

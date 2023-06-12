@@ -1793,6 +1793,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleSceneInt
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PlayerCharacter
       value: 
       objectReference: {fileID: 1911896913}
@@ -2462,7 +2466,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1810599809
-  m_SortingLayer: 0
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
@@ -16383,7 +16387,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1810599809
-  m_SortingLayer: 0
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 549f7f4d1cb941e4f988994ba41646b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17280,7 +17284,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1810599809
-  m_SortingLayer: 0
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1bf74510a77bb15479304a036e9218fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17561,7 +17565,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1810599809
-  m_SortingLayer: 0
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f01e8cfa6f7d95049a5b10a08f139d57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19079,6 +19083,10 @@ PrefabInstance:
     - target: {fileID: 7279460844237762635, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: PuzzleSceneInt
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PlayerCharacter
@@ -28320,7 +28328,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1810599809
-  m_SortingLayer: 0
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 7d13627c607379f49b06350d670d6629, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
