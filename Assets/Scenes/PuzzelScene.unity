@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEEN PUZZEL
       objectReference: {fileID: 0}
+    - target: {fileID: 3805660341027083421, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3805660341430650127, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_Camera
       value: 

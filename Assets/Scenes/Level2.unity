@@ -1508,7 +1508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleInt
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleSceneInt
@@ -17931,7 +17931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleInt
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleSceneInt
