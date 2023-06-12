@@ -7,6 +7,7 @@ public class Proximity : MonoBehaviour
     [SerializeField] private GameObject PlayerCharacter;
     [SerializeField] private GameObject TargetObject;
     [SerializeField] private int PuzzleSceneInt;
+    [SerializeField] private int PuzzleInt;
     [SerializeField] private float activationDistance = 5f;
     [SerializeField] private bool isActive = false;
 
@@ -23,6 +24,11 @@ public class Proximity : MonoBehaviour
             isActive = false;
         }
 
-        if (isActive && Input.GetKeyDown(KeyCode.E)) { SceneManager.LoadScene(PuzzleSceneInt); }
+        if (isActive && Input.GetKeyDown(KeyCode.E))
+        {
+            PlayerPrefs.SetInt("PrevScene", (SceneManager.GetActiveScene().buildIndex));
+            PlayerPrefs.SetInt("PuzzleNum", PuzzleInt);
+            SceneManager.LoadScene(PuzzleSceneInt);
+        }
     }
 }
