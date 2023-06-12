@@ -913,6 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dceb38c909822c3448c8af8145f6a690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PuzzleInts: 0200000003000000
 --- !u!4 &363154175
 Transform:
   m_ObjectHideFlags: 0
