@@ -15995,6 +15995,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1544854062138934544, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: PuzzleChecks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544854062138934544, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: PuzzleChecks.Array.data[0]
+      value: 
+      objectReference: {fileID: 914288206}
     - target: {fileID: 8384742368616390513, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -22446,6 +22454,17 @@ RectTransform:
   m_AnchoredPosition: {x: 5.9699965, y: -2.5500011}
   m_SizeDelta: {x: 1.864, y: 1.39}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &914288206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 7279460844701231031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db405f739664a24ead8f9fbc609e386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &941902466
 GameObject:
   m_ObjectHideFlags: 0
