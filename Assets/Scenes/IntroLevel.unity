@@ -16202,7 +16202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractPopUp: {fileID: 1967839287}
   NextTutorial: {fileID: 159516982}
-  InteractionBox: {fileID: 1038096380}
+  InteractionBox: {fileID: 0}
 --- !u!1 &669418929
 GameObject:
   m_ObjectHideFlags: 0
@@ -23357,11 +23357,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1038096380 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7279460844237762635, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
-  m_PrefabInstance: {fileID: 7279460844701231031}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1084834230
 GameObject:
   m_ObjectHideFlags: 0
@@ -25843,6 +25838,10 @@ PrefabInstance:
       propertyPath: objectToMove
       value: 
       objectReference: {fileID: 7279460844701231032}
+    - target: {fileID: 7279460844237762635, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PuzzleSceneInt
       value: 4
@@ -25908,7 +25907,8 @@ PrefabInstance:
       value: Interactiepunt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7279460844338982993, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
