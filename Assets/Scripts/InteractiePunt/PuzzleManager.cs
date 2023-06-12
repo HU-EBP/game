@@ -37,6 +37,7 @@ public class PuzzleManager : MonoBehaviour
     {
         int CompletedValue = IsCompleted ? 1 : 0;
         PlayerPrefs.SetInt("Puzzle" + CurrentPuzzle + "Completed", CompletedValue);
+        PlayerPrefs.SetInt("DidPuzzle", 1);
         SceneManager.LoadScene(PreviousScene);
     }
 }

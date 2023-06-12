@@ -44,13 +44,7 @@ public class ResetConfirm : MonoBehaviour
             }
 
             // Resetting Puzzle ints
-            for (int i = 0; i < PuzzleChecks.Length; i++)
-            {
-                if (PlayerPrefs.HasKey("Puzzle" + PuzzleInts[i] + "Completed"))
-                {
-                    PlayerPrefs.SetInt("Puzzle" + PuzzleInts[i] + "Completed", 0);
-                }
-            }
+            for (int i = 0; i < PuzzleChecks.Length; i++) { if (PlayerPrefs.HasKey("Puzzle" + PuzzleInts[i] + "Completed")) { PlayerPrefs.SetInt("Puzzle" + PuzzleInts[i] + "Completed", 0); } }
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
