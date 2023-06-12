@@ -18,7 +18,7 @@ public class ResetConfirm : MonoBehaviour
         thisGameObject.SetActive(false);
 
         PuzzleInts = new int[PuzzleChecks.Length];
-        for (int i = 0; i < PuzzleChecks.Length; i++) { PuzzleInts[i] = PuzzleChecks.PuzzleInt; }
+        for (int i = 0; i < PuzzleChecks.Length; i++) { PuzzleInts[i] = PuzzleChecks[i].PuzzleInt; }
     }
 
     public void OnButtonClick()
