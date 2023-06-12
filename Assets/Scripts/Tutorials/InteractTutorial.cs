@@ -17,5 +17,5 @@ public class InteractTutorial : MonoBehaviour
         InteractPopUp.gameObject.SetActive(false);
         NextTutorial.gameObject.SetActive(true);
         enabled = false;
-    */}
+    }*/
 }
