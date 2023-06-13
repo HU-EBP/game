@@ -46,9 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleChecks:
   - {fileID: 0}
-  - {fileID: 0}
   TeleportPoints:
-  - {fileID: 0}
   - {fileID: 0}
   PlayerCharacter: {fileID: 0}
   Camera: {fileID: 0}

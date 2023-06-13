@@ -1526,6 +1526,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.28
       objectReference: {fileID: 0}
+    - target: {fileID: 7279460844202569909, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_Name
+      value: Interactie punt2
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460844237762633, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -1556,7 +1560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936082, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Name
-      value: PuzzleCheck
+      value: PuzzleCheck2
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844338982993, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_IsActive
@@ -1605,6 +1609,10 @@ PrefabInstance:
     - target: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460844556371423, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_Name
+      value: Platform2
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371423, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Layer
@@ -18005,6 +18013,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.222255
       objectReference: {fileID: 0}
+    - target: {fileID: 7279460844202569909, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_Name
+      value: Interactie punt1
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460844237762633, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -18035,7 +18047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936082, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Name
-      value: PuzzleCheck
+      value: PuzzleCheck1
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844338983006, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Camera
@@ -18060,6 +18072,10 @@ PrefabInstance:
     - target: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.y
       value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460844556371423, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_Name
+      value: Platform1
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371423, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Layer
@@ -28519,6 +28535,14 @@ PrefabInstance:
       propertyPath: PlayerCharacter
       value: 
       objectReference: {fileID: 1911896913}
+    - target: {fileID: 7354553580113546789, guid: 02a9d11c67da4f04c87bbc021127de87, type: 3}
+      propertyPath: PuzzleChecks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354553580113546789, guid: 02a9d11c67da4f04c87bbc021127de87, type: 3}
+      propertyPath: TeleportPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7354553580113546789, guid: 02a9d11c67da4f04c87bbc021127de87, type: 3}
       propertyPath: PuzzleChecks.Array.data[0]
       value: 
