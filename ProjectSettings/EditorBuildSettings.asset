@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 2c69d11c179165e4786f48b17086b2ed
+  - enabled: 1
+    path: Assets/Scenes/PuzzelScene.unity
+    guid: d740fca5a7f93cc49b221b46665dedaf
   m_configObjects: {}
