@@ -38,11 +38,14 @@ public class PuzzleManager : MonoBehaviour
     private IEnumerator CheckIfDone()
     {
         int CompletedValue = IsCompleted ? 1 : 0;
-        PlayerPrefs.SetInt("Puzzle" + CurrentPuzzle + "Completed", CompletedValue);
-        PlayerPrefs.SetInt("DidPuzzle", CompletedValue);
-
         yield return new WaitForSeconds(1f);
         if (IsCompleted) { ReturnToScene(); }
     }
-    public void ReturnToScene() { SceneManager.LoadScene(PreviousScene); }
+    public void ReturnToScene()
+    {
+        int CompletedValue = IsCompleted ? 1 : 0;
+        PlayerPrefs.SetInt("Puzzle" + CurrentPuzzle + "Completed", CompletedValue);
+        PlayerPrefs.SetInt("DidPuzzle", CompletedValue);
+        SceneManager.LoadScene(PreviousScene);
+    }
 }

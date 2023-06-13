@@ -9,7 +9,7 @@ public class PuzzleCheck : MonoBehaviour
     [SerializeField] private GameObject PlayerCharacter;
     [SerializeField] private GameObject TargetObject;
     [SerializeField] private int PuzzleSceneInt;
-    [SerializeField] private float activationDistance = 5f;
+    [SerializeField] private float activationDistance = 2f;
     [SerializeField] private bool isActive = false;
     private int PuzzleCompletedValue;
     private bool PuzzleCompleted = false;
