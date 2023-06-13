@@ -7,31 +7,25 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
-    public static bool isGamePaused;
+    public static bool isGamePaused = false;
     public KeybindManager keybindManager;
 
 
-  void Update()
-{
-    if (Input.GetKeyDown(KeyCode.Escape) && !keybindManager.IsRebinding)
+    void Update()
     {
-        if (isGamePaused)
+        if (Input.GetKeyDown(KeyCode.Escape) && !keybindManager.IsRebinding)
         {
-            Resume();
-        }
-        else
-        {
-            Pause();
+            if (isGamePaused) { Resume(); }
+            else { Pause(); }
         }
     }
-}
 
-public void BackToHome()
+    public void BackToHome()
     {
         // When button is pressed, load the scene with the index of the current scene - 1
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-public void BackTwoScenes()
+    public void BackTwoScenes()
     {
         // When button is pressed, load the scene with the index of the current scene - 2
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
