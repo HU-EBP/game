@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 3805660340193911348}
   - component: {fileID: 3805660340193911350}
   - component: {fileID: 3805660340193911351}
+  - component: {fileID: 1939641963153728740}
   m_Layer: 0
   m_Name: Management
   m_TagString: Untagged
@@ -191,6 +192,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617b56e914ad4046a16af6f5e275703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1939641963153728740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3805660340193911349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086451aa890839d4c8c30697d86c5dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EndNodes: []
+  MainPuzzleManager: {fileID: 0}
 --- !u!1 &3805660340515891974
 GameObject:
   m_ObjectHideFlags: 0

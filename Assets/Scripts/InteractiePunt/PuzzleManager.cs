@@ -1,10 +1,11 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
     public bool IsCompleted;
-
     [SerializeField] private GameObject[] puzzles;
 
     private int CurrentPuzzle;
@@ -33,11 +34,15 @@ public class PuzzleManager : MonoBehaviour
     }
 
     // Function to load level scene on 'return' or 'complete' button click (depending if the puzzle was completed)
-    public void ReturnToLevel()
+    public void DoCheck() { StartCoroutine(CheckIfDone()); }
+    private IEnumerator CheckIfDone()
     {
         int CompletedValue = IsCompleted ? 1 : 0;
         PlayerPrefs.SetInt("Puzzle" + CurrentPuzzle + "Completed", CompletedValue);
         PlayerPrefs.SetInt("DidPuzzle", CompletedValue);
-        SceneManager.LoadScene(PreviousScene);
+
+        yield return new WaitForSeconds(1f);
+        if (IsCompleted) { ReturnToScene(); }
     }
+    public void ReturnToScene() { SceneManager.LoadScene(PreviousScene); }
 }
