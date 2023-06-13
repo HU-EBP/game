@@ -30,9 +30,6 @@ public class LevelTester : MonoBehaviour
 
         // Set original sequence of buttons on/off
         for (int i = 0; i < buttonList.Count; i++) { originalSequence[i] = buttonList[i].IsPowered; }
-
-        // Log how many possible sequences the current puzzle has
-        Debug.Log("This puzzle has " + (Math.Pow(2, buttonList.Count)) + " possible sequences.", gameObject);
     }
 
     // Main function to check all possible sequences
