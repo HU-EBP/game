@@ -25300,6 +25300,10 @@ PrefabInstance:
       propertyPath: PlayerCharacter
       value: 
       objectReference: {fileID: 29709266}
+    - target: {fileID: 1809273394441230180, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: activationDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: moveTo.x
       value: 64.50026
