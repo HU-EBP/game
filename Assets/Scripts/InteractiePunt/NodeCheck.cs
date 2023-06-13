@@ -69,7 +69,7 @@ public class NodeCheck : MonoBehaviour
         else if (ConnectTo.Length == 0) { Debug.LogError("No OUT-connection(s) added on " + gameObject.name + "!", gameObject); }
 
         // Check if node type was selected
-        if (SelectedNodeType != NodeType.BUTTON && SelectedNodeType != NodeType.AND && SelectedNodeType != NodeType.NAND && SelectedNodeType != NodeType.NOT && SelectedNodeType != NodeType.OR && SelectedNodeType != NodeType.NOR && SelectedNodeType != NodeType.XOR && SelectedNodeType != NodeType.XNOR && SelectedNodeType != NodeType.EMPTY && SelectedNodeType != NodeType.END) { Debug.LogError("No node type selected on " + gameObject.name + "!", gameObject); }
+        if (SelectedNodeType != NodeType.BUTTON && SelectedNodeType != NodeType.AND && SelectedNodeType != NodeType.NAND && SelectedNodeType != NodeType.NOT && SelectedNodeType != NodeType.OR && SelectedNodeType != NodeType.NOR && SelectedNodeType != NodeType.XOR && SelectedNodeType != NodeType.XNOR && SelectedNodeType != NodeType.EMPTY && SelectedNodeType != NodeType.END && SelectedNodeType != NodeType.REROUTE) { Debug.LogError("No node type selected on " + gameObject.name + "!", gameObject); }
     }
 
     void Start()
