@@ -6,9 +6,11 @@ public class Teleporter : MonoBehaviour
     [SerializeField] private Transform[] TeleportPoints;
     [SerializeField] private GameObject PlayerCharacter;
     [SerializeField] private Transform Camera;
+    [SerializeField] private Transform CheckpointPos;
 
     private bool[] PuzzleBools;
     private bool PuzzleDone = false;
+    private bool Checkpoint1 = false;
 
     void Start()
     {
@@ -22,6 +24,15 @@ public class Teleporter : MonoBehaviour
             PlayerPrefs.DeleteKey("DidPuzzle");
         }
 
+        // Get value to check if a checkpoint was reached
+        if (PlayerPrefs.HasKey("Checkpoint1")) { Checkpoint1 = PlayerPrefs.GetInt("Checkpoint1") == 1 ? true : false; }
+
+        // If player did not come from the PuzzleScene
+        if (!PuzzleDone && Checkpoint1)
+        {
+            PlayerCharacter.transform.position = CheckpointPos.transform.position;
+            Camera.transform.position = CheckpointPos.transform.position;
+        }
         // If player came from the PuzzleScene
         if (PuzzleDone)
         {
