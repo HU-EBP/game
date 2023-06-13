@@ -339,6 +339,14 @@ PrefabInstance:
       propertyPath: MainPuzzleManager
       value: 
       objectReference: {fileID: 1480485635}
+    - target: {fileID: 1939641963153728740, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
+      propertyPath: EndNodes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939641963153728740, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
+      propertyPath: EndNodes.Array.data[0]
+      value: 
+      objectReference: {fileID: 190527464}
     - target: {fileID: 3805660341027083420, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -529,6 +537,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4278772799346319391, guid: 8ff1f1d52931960449424eb66717db45, type: 3}
   m_PrefabInstance: {fileID: 190527461}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &190527464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1827973897393057406, guid: 8ff1f1d52931960449424eb66717db45, type: 3}
+  m_PrefabInstance: {fileID: 190527461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190527463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d270ccd274a5c4783ed9cad8a2ff4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &236286476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -591,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341027083421, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341430650127, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_Camera
@@ -2430,7 +2449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341027083421, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341430650127, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_Camera

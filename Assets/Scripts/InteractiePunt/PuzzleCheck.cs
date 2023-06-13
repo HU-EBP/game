@@ -5,15 +5,14 @@ using UnityEngine.UI;
 public class PuzzleCheck : MonoBehaviour
 {
     // Vars for the interaction/scene
+    public bool PuzzleCompleted = false;
+    private int PuzzleCompletedValue;
     public int PuzzleInt;
     [SerializeField] private GameObject PlayerCharacter;
     [SerializeField] private GameObject TargetObject;
     [SerializeField] private int PuzzleSceneInt;
     [SerializeField] private float activationDistance = 2f;
     [SerializeField] private bool isActive = false;
-    private int PuzzleCompletedValue;
-    private bool PuzzleCompleted = false;
-    private bool PuzzleDone = false;
 
     // Vars for the movable object
     [SerializeField] private Transform objectToMove;
@@ -23,28 +22,14 @@ public class PuzzleCheck : MonoBehaviour
     private float startTime;
     private Vector3 startPosition;
 
-    void Start()
+    void Awake()
     {
-        // Get value to check if a puzzle was done (if the player came from the PuzzleScene), remove pref
-        if (PlayerPrefs.HasKey("DidPuzzle"))
-        {
-            PuzzleDone = PlayerPrefs.GetInt("DidPuzzle") == 1;
-            PlayerPrefs.DeleteKey("DidPuzzle");
-        }
-
-        // Check if puzzle was done (if the player came from the PuzzleScene), teleport player if it was
-        if (PuzzleDone) { PlayerCharacter.transform.position = transform.position; }
-
-        // Get value to check if puzzle completed
-        if (PlayerPrefs.HasKey("Puzzle" + PuzzleInt + "Completed")) { PuzzleCompletedValue = PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed"); }
-        if (PlayerPrefs.HasKey("Puzzle" + (PuzzleInt + 1) + "Completed"))
-        {
-            if (PlayerPrefs.GetInt("Puzzle" + (PuzzleInt + 1) + "Completed") == 1) { PuzzleCompleted = false; }
-            else { PuzzleCompleted = PuzzleCompletedValue == 1; }
-        }
-        else { PuzzleCompleted = PuzzleCompletedValue == 1; }
-
         // Check if the puzzle was completed, move object if it was
+        if (PlayerPrefs.HasKey("Puzzle" + PuzzleInt + "Completed"))
+        {
+            PuzzleCompletedValue = PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed");
+            PuzzleCompleted = PuzzleCompletedValue == 1;
+        }
         if (PuzzleCompleted)
         {
             isMoving = true;
