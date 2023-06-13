@@ -13,6 +13,7 @@ public class PuzzleCheck : MonoBehaviour
     [SerializeField] private bool isActive = false;
     private int PuzzleCompletedValue;
     private bool PuzzleCompleted = false;
+    private bool PuzzleDone = false;
 
     // Vars for the movable object
     [SerializeField] private Transform objectToMove;
@@ -24,6 +25,16 @@ public class PuzzleCheck : MonoBehaviour
 
     void Start()
     {
+        // Get value to check if a puzzle was done (if the player came from the PuzzleScene), remove pref
+        if (PlayerPrefs.HasKey("DidPuzzle"))
+        {
+            PuzzleDone = PlayerPrefs.GetInt("DidPuzzle") == 1;
+            PlayerPrefs.DeleteKey("DidPuzzle");
+        }
+
+        // Check if puzzle was done (if the player came from the PuzzleScene), teleport player if it was
+        if (PuzzleDone) { PlayerCharacter.transform.position = transform.position; }
+
         // Get value to check if puzzle completed
         if (PlayerPrefs.HasKey("Puzzle" + PuzzleInt + "Completed")) { PuzzleCompletedValue = PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed"); }
         if (PlayerPrefs.HasKey("Puzzle" + (PuzzleInt + 1) + "Completed"))
@@ -33,13 +44,9 @@ public class PuzzleCheck : MonoBehaviour
         }
         else { PuzzleCompleted = PuzzleCompletedValue == 1; }
 
-        // Check if the puzzle was completed
+        // Check if the puzzle was completed, move object if it was
         if (PuzzleCompleted)
         {
-            // Teleport player to correct position (at interactiepunt)
-            PlayerCharacter.transform.position = transform.position;
-
-            // Start moving the object
             isMoving = true;
             startTime = Time.time;
             startPosition = objectToMove.localPosition;
