@@ -15951,7 +15951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractPopUp: {fileID: 1967839287}
-  NextTutorial: {fileID: 0}
+  NextTutorial: {fileID: 1503102875}
+  PuzzleInt: 1
 --- !u!1 &719024856
 GameObject:
   m_ObjectHideFlags: 0
@@ -23894,6 +23895,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+--- !u!1 &1503102875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+  m_PrefabInstance: {fileID: 1503102874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1503102876 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
