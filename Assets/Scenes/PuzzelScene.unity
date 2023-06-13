@@ -621,7 +621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &285848584
 RectTransform:
   m_ObjectHideFlags: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Om de deur open te krijgen moet je deze puzzel oplossen*. Om de puzzel
+  m_text: 'Om de deur open te krijgen moet je deze puzzel oplossen. Om de puzzel
     op te lossen moeten alle lampen AAN staan. Nu staan ze uit!
 
 
@@ -2074,7 +2074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341027083421, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341430650127, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_Camera
@@ -2178,7 +2178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341027083421, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3805660341430650127, guid: 54c101d9ae4155a4f882f4478b12639e, type: 3}
       propertyPath: m_Camera
