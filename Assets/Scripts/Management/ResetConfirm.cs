@@ -8,13 +8,14 @@ public class ResetConfirm : MonoBehaviour
     [SerializeField] private PuzzleCheck[] PuzzleChecks;
     [SerializeField] private TextMeshProUGUI textObject;
     [SerializeField] private GameObject thisGameObject;
+    [SerializeField] private string ConfirmText;
     private int timesClicked = 0;
     private int[] PuzzleInts;
 
     private void Start()
     {
         textObject.color = Color.red;
-        textObject.text = "Resetten?";
+        textObject.text = ConfirmText;
         thisGameObject.SetActive(false);
 
         PuzzleInts = new int[PuzzleChecks.Length];
@@ -25,9 +26,6 @@ public class ResetConfirm : MonoBehaviour
     {
         if (timesClicked == 1)
         {
-            textObject.color = new Color(0.196f, 0.196f, 0.196f, 1);
-            textObject.text = "Reset level";
-
             // Resetting level 1 if this level is active
             if (PlayerPrefs.HasKey("Level1Active"))
             {
