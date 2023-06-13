@@ -913,7 +913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dceb38c909822c3448c8af8145f6a690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PuzzleInts: 0200000003000000
 --- !u!4 &363154175
 Transform:
   m_ObjectHideFlags: 0
@@ -27591,6 +27590,18 @@ PrefabInstance:
     - target: {fileID: 8384742369064306400, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384742369064306403, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2059590899}
+    - target: {fileID: 8384742369064306403, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384742369064306403, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 8384742369064306407, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
       propertyPath: m_Name
