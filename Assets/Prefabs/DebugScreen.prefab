@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Versie: 13 juni 2023'
+  m_text: 'Versie: 13 juni 2023 - 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 97386e10ad515c244af549eac9fd1b8e, type: 2}
   m_sharedMaterial: {fileID: -7965645355411349503, guid: 97386e10ad515c244af549eac9fd1b8e, type: 2}
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
