@@ -767,6 +767,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -319.00006
       objectReference: {fileID: 0}
+    - target: {fileID: 8384742370225314005, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_text
+      value: Quit puzzel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
