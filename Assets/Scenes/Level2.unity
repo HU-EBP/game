@@ -318,6 +318,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 114297992}
+    - targetCorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 114297996}
   m_SourcePrefab: {fileID: 100100000, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
 --- !u!1 &114297988 stripped
 GameObject:
@@ -363,6 +366,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
   m_PrefabInstance: {fileID: 114297987}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &114297996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114297988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8000cf335da06e469c9fdf8e25efa6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StopShowingThis: L2Checkpoint
 --- !u!1001 &125485666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17493,6 +17509,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1390205219}
+    - targetCorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1390205222}
   m_SourcePrefab: {fileID: 100100000, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
 --- !u!1 &1390205214 stripped
 GameObject:
@@ -17532,12 +17551,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078437e27ff99b848bccfb14cd8d18de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rectTransform: {fileID: 0}
 --- !u!4 &1390205221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
   m_PrefabInstance: {fileID: 1390205213}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390205222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390205214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8000cf335da06e469c9fdf8e25efa6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StopShowingThis: L2Secret
 --- !u!1 &1398273746
 GameObject:
   m_ObjectHideFlags: 0
