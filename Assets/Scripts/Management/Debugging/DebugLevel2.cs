@@ -53,6 +53,6 @@ public class DebugLevel2 : MonoBehaviour
         if (PlayerPrefs.HasKey("Checkpoint1")) { PlayerPrefs.DeleteKey("Checkpoint1"); }
         if (PlayerPrefs.HasKey("StopShowingL2Checkpoint")) { PlayerPrefs.DeleteKey("StopShowingL2Checkpoint"); }
         if (PlayerPrefs.HasKey("StopShowingL2Secret")) { PlayerPrefs.DeleteKey("StopShowingL2Secret"); }
-        Debug.Log("Level 2 was hard reset, restarting the level is recommended if you are currently in level 2.");
+        Debug.Log("Level 2 was hard reset, restarting the scene you are currently in is recommended.");
     }
 }

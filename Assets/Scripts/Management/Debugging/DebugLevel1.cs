@@ -52,6 +52,6 @@ public class DebugLevel1 : MonoBehaviour
         if (PlayerPrefs.HasKey("WalkTutorial")) { PlayerPrefs.DeleteKey("WalkTutorial"); }
         if (PlayerPrefs.HasKey("JumpTutorial")) { PlayerPrefs.DeleteKey("JumpTutorial"); }
         if (PlayerPrefs.HasKey("EnemyTutorial")) { PlayerPrefs.DeleteKey("EnemyTutorial"); }
-        Debug.Log("Level 1 was hard reset, restarting the level is recommended if you are currently in level 1.");
+        Debug.Log("Level 1 was hard reset, restarting the scene you are currently in is recommended.");
     }
 }
