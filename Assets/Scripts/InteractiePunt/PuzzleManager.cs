@@ -33,7 +33,7 @@ public class PuzzleManager : MonoBehaviour
         puzzles[CurrentPuzzle].gameObject.SetActive(true);
     }
 
-    // Function to load level scene on 'return' or 'complete' button click (depending if the puzzle was completed)
+    // Functions to run if puzzle was completed or if player gives up on puzzle (can be called by each individual puzzle CompleteCheck-script)
     public void DoCheck() { StartCoroutine(CheckIfDone()); }
     private IEnumerator CheckIfDone()
     {
