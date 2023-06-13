@@ -8,7 +8,21 @@ public class SceneSwitch : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneToLoad);
+            // If the scene to load is level 2, check if level 1 was completed first
+            if (SceneToLoad == 3)
+            {
+                if (PlayerPrefs.HasKey("Level1Complete"))
+                {
+                    if (PlayerPrefs.GetInt("Level1Complete") == 1)
+                    {
+                        SceneManager.LoadScene(SceneToLoad);
+                    }
+                }
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneToLoad);
+            }
         }
     }
 }
