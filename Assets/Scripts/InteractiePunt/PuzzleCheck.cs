@@ -28,7 +28,7 @@ public class PuzzleCheck : MonoBehaviour
         if (PlayerPrefs.HasKey("Puzzle" + PuzzleInt + "Completed")) { PuzzleCompletedValue = PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed"); }
         if (PlayerPrefs.HasKey("Puzzle" + (PuzzleInt + 1) + "Completed"))
         {
-            if (PlayerPrefs.GetInt("Puzzle" + PuzzleInt + "Completed") == 1) { PuzzleCompleted = false; }
+            if (PlayerPrefs.GetInt("Puzzle" + (PuzzleInt + 1) + "Completed") == 1) { PuzzleCompleted = false; }
             else { PuzzleCompleted = PuzzleCompletedValue == 1; }
         }
         else { PuzzleCompleted = PuzzleCompletedValue == 1; }
