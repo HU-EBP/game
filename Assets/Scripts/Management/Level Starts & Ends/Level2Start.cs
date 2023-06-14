@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level2Start : MonoBehaviour
 {
@@ -8,6 +9,5 @@ public class Level2Start : MonoBehaviour
         else if (PlayerPrefs.HasKey("Level3Active")) { PlayerPrefs.DeleteKey("Level3Active"); }
 
         PlayerPrefs.SetInt("Level2Active", 1);
-        enabled = false;
     }
 }
