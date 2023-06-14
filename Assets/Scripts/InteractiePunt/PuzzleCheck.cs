@@ -41,7 +41,7 @@ public class PuzzleCheck : MonoBehaviour
     private void Update()
     {
         // Check for distance between interactiepunt and player, show E-key if player is close enough
-        if (!isActive && Vector3.Distance(TargetObject.transform.position, PlayerCharacter.transform.position) <= activationDistance)
+        if (!isActive && Vector3.Distance(TargetObject.transform.position, PlayerCharacter.transform.position) < activationDistance)
         {
             TargetObject.gameObject.SetActive(true);
             isActive = true;
@@ -57,8 +57,10 @@ public class PuzzleCheck : MonoBehaviour
         // If the player presses E while the E-key is showing, go to puzzle
         if (isActive && Input.GetKeyDown(KeyCode.E))
         {
-            PlayerPrefs.SetInt("PrevScene", (SceneManager.GetActiveScene().buildIndex));
             PlayerPrefs.SetInt("PuzzleNum", PuzzleInt);
+            PlayerPrefs.SetInt("PrevScene", (SceneManager.GetActiveScene().buildIndex));
+            PlayerPrefs.SetFloat("TeleportX", transform.position.x);
+            PlayerPrefs.SetFloat("TeleportY", transform.position.y);
             SceneManager.LoadScene(PuzzleSceneInt);
         }
 

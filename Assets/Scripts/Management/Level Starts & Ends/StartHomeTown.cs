@@ -15,11 +15,12 @@ public class StartHomeTown : MonoBehaviour
 
         // Delete all in-level playerprefs
         for (int i = 0; i <= NumPuzzles; i++) { if (PlayerPrefs.HasKey("Puzzle" + i + "Completed")) { PlayerPrefs.DeleteKey("Puzzle" + i + "Completed"); } }
-        if (PlayerPrefs.HasKey("DidPuzzle")) { PlayerPrefs.DeleteKey("DidPuzzle"); }
         if (PlayerPrefs.HasKey("WalkTutorial")) { PlayerPrefs.DeleteKey("WalkTutorial"); }
         if (PlayerPrefs.HasKey("JumpTutorial")) { PlayerPrefs.DeleteKey("JumpTutorial"); }
         if (PlayerPrefs.HasKey("EnemyTutorial")) { PlayerPrefs.DeleteKey("EnemyTutorial"); }
         if (PlayerPrefs.HasKey("Checkpoint1")) { PlayerPrefs.DeleteKey("Checkpoint1"); }
+        if (PlayerPrefs.HasKey("TeleportX")) { PlayerPrefs.DeleteKey("TeleportX"); }
+        if (PlayerPrefs.HasKey("TeleportY")) { PlayerPrefs.DeleteKey("TeleportY"); }
 
         // Hide & show appropriate arrow pointers for level 1/2
         if (PlayerPrefs.HasKey("Level1Complete"))
