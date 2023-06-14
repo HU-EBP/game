@@ -14,7 +14,11 @@ public class StartHomeTown : MonoBehaviour
         isGamePaused = false;
 
         // Delete all in-level playerprefs
-        for (int i = 0; i <= NumPuzzles; i++) { if (PlayerPrefs.HasKey("Puzzle" + i + "Completed")) { PlayerPrefs.DeleteKey("Puzzle" + i + "Completed"); } }
+        for (int i = 0; i <= NumPuzzles; i++)
+        {
+            if (PlayerPrefs.HasKey("Puzzle" + i + "Completed")) { PlayerPrefs.DeleteKey("Puzzle" + i + "Completed"); }
+            if (PlayerPrefs.HasKey("PuzzleNum" + i)) { PlayerPrefs.DeleteKey("PuzzleNum" + i); }
+        }
         if (PlayerPrefs.HasKey("WalkTutorial")) { PlayerPrefs.DeleteKey("WalkTutorial"); }
         if (PlayerPrefs.HasKey("JumpTutorial")) { PlayerPrefs.DeleteKey("JumpTutorial"); }
         if (PlayerPrefs.HasKey("EnemyTutorial")) { PlayerPrefs.DeleteKey("EnemyTutorial"); }
