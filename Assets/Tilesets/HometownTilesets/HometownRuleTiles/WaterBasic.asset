@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: New Animated Tile
+  m_Name: WaterBasic
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 1741532425, guid: f42d548b0bde4446b8b2725cd08ec2f5, type: 3}
-  - {fileID: -684838871, guid: f42d548b0bde4446b8b2725cd08ec2f5, type: 3}
-  m_MinSpeed: 2
-  m_MaxSpeed: 2
+  - {fileID: 1538156394, guid: b20f1ad95465a4c15b54238f852384ef, type: 3}
+  - {fileID: -1642550152, guid: b20f1ad95465a4c15b54238f852384ef, type: 3}
+  - {fileID: 1321736214, guid: b20f1ad95465a4c15b54238f852384ef, type: 3}
+  - {fileID: -180495245, guid: b20f1ad95465a4c15b54238f852384ef, type: 3}
+  m_MinSpeed: 4
+  m_MaxSpeed: 4
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
