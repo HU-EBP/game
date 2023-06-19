@@ -10,7 +10,11 @@ public class DebugList : MonoBehaviour
     // Disable/enable displaying log messages when debug menu is disabled/enabled
     private void OnEnable() { Application.logMessageReceived += HandleLogMessage; }
     private void OnDisable() { Application.logMessageReceived -= HandleLogMessage; }
-    private void HandleLogMessage(string logString, string stackTrace, LogType type) { logMessages.Add(logString); }
+    private void HandleLogMessage(string logString, string stackTrace, LogType type)
+    {
+        logMessages.Add(logString);
+        if (logMessages.Count > 10) { logMessages.RemoveAt(0); }
+    }
 
     // Get log message list
     private void OnGUI()
