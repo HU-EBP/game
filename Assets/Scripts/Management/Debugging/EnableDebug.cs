@@ -6,18 +6,11 @@ public class EnableDebug : MonoBehaviour
 
     void Update()
     {
+        // Enable/disable debug screen on F4
         if (Input.GetKeyDown(KeyCode.F4))
         {
-            if (!DebugScreen.activeSelf)
-            {
-                Debug.Log("Enabling Debug mode.");
-                DebugScreen.SetActive(true);
-            }
-            else
-            {
-                Debug.Log("Disabling Debug mode.");
-                DebugScreen.SetActive(false);
-            }
+            if (!DebugScreen.activeSelf) { DebugScreen.SetActive(true); }
+            else { DebugScreen.SetActive(false); }
         }
     }
 }

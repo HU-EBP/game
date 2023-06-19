@@ -6,6 +6,10 @@ public class DebugLevel2 : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ButtonText;
     [SerializeField] private bool IsCompleteButton = false;
     [SerializeField] private bool IsCheckpointButton = false;
+    [SerializeField] private Transform PlayerCharacter;
+    [SerializeField] private Transform Camera;
+    [SerializeField] private Transform TeleportSpot1;
+    [SerializeField] private Transform TeleportSpot2;
     private bool Level2 = false;
     private bool Level2CP = false;
 
@@ -96,5 +100,29 @@ public class DebugLevel2 : MonoBehaviour
         if (PlayerPrefs.HasKey("StopShowingL2Checkpoint")) { PlayerPrefs.DeleteKey("StopShowingL2Checkpoint"); }
         if (PlayerPrefs.HasKey("StopShowingL2Secret")) { PlayerPrefs.DeleteKey("StopShowingL2Secret"); }
         Debug.Log("Level 2 was hard reset, restarting the scene you are currently in is recommended.");
+    }
+
+    // Function to teleport to L2 interactiepunt 1
+    public void ToIntPoint1()
+    {
+        if (PlayerPrefs.HasKey("Level2Active") && PlayerPrefs.GetInt("Level2Active") == 1)
+        {
+            PlayerCharacter.transform.position = TeleportSpot1.transform.position;
+            Camera.transform.position = TeleportSpot1.transform.position;
+            Debug.Log("Teleported player to interactiepunt 1 of level 2!");
+        }
+        else { Debug.Log("You are not currently in Level 2! Aborting teleport..."); }
+    }
+
+    // Function to teleport to L2 interactiepunt 2
+    public void ToIntPoint2()
+    {
+        if (PlayerPrefs.HasKey("Level2Active") && PlayerPrefs.GetInt("Level2Active") == 1)
+        {
+            PlayerCharacter.transform.position = TeleportSpot2.transform.position;
+            Camera.transform.position = TeleportSpot2.transform.position;
+            Debug.Log("Teleported player to interactiepunt 2 of level 2!");
+        }
+        else { Debug.Log("You are not currently in Level 2! Aborting teleport..."); }
     }
 }

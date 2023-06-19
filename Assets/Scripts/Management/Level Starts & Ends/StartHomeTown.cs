@@ -25,6 +25,9 @@ public class StartHomeTown : MonoBehaviour
         if (PlayerPrefs.HasKey("Checkpoint1")) { PlayerPrefs.DeleteKey("Checkpoint1"); }
         if (PlayerPrefs.HasKey("TeleportX")) { PlayerPrefs.DeleteKey("TeleportX"); }
         if (PlayerPrefs.HasKey("TeleportY")) { PlayerPrefs.DeleteKey("TeleportY"); }
+        if (PlayerPrefs.HasKey("Level1Active")) { PlayerPrefs.DeleteKey("Level1Active"); }
+        if (PlayerPrefs.HasKey("Level2Active")) { PlayerPrefs.DeleteKey("Level2Active"); }
+        if (PlayerPrefs.HasKey("Level3Active")) { PlayerPrefs.DeleteKey("Level3Active"); }
 
         // Hide & show appropriate arrow pointers for level 1/2
         if (PlayerPrefs.HasKey("Level1Complete"))
