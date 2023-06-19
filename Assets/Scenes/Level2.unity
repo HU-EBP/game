@@ -1461,6 +1461,14 @@ PrefabInstance:
       propertyPath: activationDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4805383776899273029, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 77.00315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805383776899273029, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27089977
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: moveTo.x
       value: 57.786
@@ -1709,6 +1717,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db405f739664a24ead8f9fbc609e386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &411710540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4805383776899273029, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 411710536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &430731403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2855,6 +2868,38 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3476255173421112678, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 2059590903}
+    - target: {fileID: 3476255173421112678, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: TeleportSpot1
+      value: 
+      objectReference: {fileID: 1793862312}
+    - target: {fileID: 3476255173421112678, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: TeleportSpot2
+      value: 
+      objectReference: {fileID: 411710540}
+    - target: {fileID: 3476255173421112678, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: PlayerCharacter
+      value: 
+      objectReference: {fileID: 1911896920}
+    - target: {fileID: 6384237154706363142, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 2059590903}
+    - target: {fileID: 6384237154706363142, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: TeleportSpot1
+      value: 
+      objectReference: {fileID: 1793862312}
+    - target: {fileID: 6384237154706363142, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: TeleportSpot2
+      value: 
+      objectReference: {fileID: 411710540}
+    - target: {fileID: 6384237154706363142, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
+      propertyPath: PlayerCharacter
+      value: 
+      objectReference: {fileID: 1911896920}
     - target: {fileID: 6714923956566106851, guid: dc939f742e6ee2748b759e3dc5eb95fd, type: 3}
       propertyPath: m_Camera
       value: 
@@ -17957,6 +18002,14 @@ PrefabInstance:
       propertyPath: activationDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4805383776899273029, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 62.75025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805383776899273029, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.250013
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460843107573182, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -26923,6 +26976,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1793862312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4805383776899273029, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 1504841560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1817933608
 GameObject:
   m_ObjectHideFlags: 0
