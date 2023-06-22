@@ -6,6 +6,8 @@ public class StartHomeTown : MonoBehaviour
     [SerializeField] private GameObject Level1Arrow;
     [SerializeField] private GameObject Level2Arrow;
     [SerializeField] private int NumPuzzles;
+    [SerializeField] private GameObject Spark;
+    [SerializeField] private GameObject SparkPraat;
     public static bool isGamePaused;
     void Start()
     {
@@ -37,6 +39,8 @@ public class StartHomeTown : MonoBehaviour
                 Level1Arrow.SetActive(false);
                 Level2Arrow.SetActive(true);
                 WalkTutorial.SetActive(false);
+                Spark.SetActive(true);
+                SparkPraat.SetActive(true);
             }
         }
         if (PlayerPrefs.HasKey("Level2Complete"))
