@@ -50,6 +50,8 @@ public class StartHomeTown : MonoBehaviour
                 Level1Arrow.SetActive(false);
                 Level2Arrow.SetActive(false);
                 WalkTutorial.SetActive(false);
+                Spark.SetActive(false);
+                SparkPraat.SetActive(false);
             }
         }
     }
